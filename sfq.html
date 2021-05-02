@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>纯HTML和CSS实现垂直手风琴菜单列表</title>
+    <style>
+        body {
+        background: #f192dd;
+        }
+        .box {
+            margin: 100px auto;
+            width: 20%;
+            background-color:  #2a9ead;
+            
+        }
+        .box .box-item {
+        border-bottom: 1px solid #666;
+        color: #eee;
+        }
+        .box .title {
+        margin: 0;
+        padding: 10px;
+        background-color: #2a9ead;
+        }
+        .box-item-content{
+            height: 0;
+            overflow: hidden;
+            background-color: rgb(54, 49, 49);
+            margin: 0;
+            padding-left: 20px;
+            transition: 0.5s;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            padding-top: 5px;
+        }
+        .box:hover .box-item:hover .box-item-content {
+            height: 100px;
+        }
+        a{
+            text-decoration: none;
+            color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <div class="box-item">
+        <p class="title">Account</p>
+        <ul class="box-item-content">
+            <li><a href="05-京东放大镜效果\detail.html">京东放大镜</a></li>
+            <li><a href="">鼠标小天使a</a></li>
+            <li>picture</li>
+        </ul>
+    </div>
+    <div class="box-item">
+        <p class="title">Messages</p>
+        <ul class="box-item-content">
+            <li>language</li>
+            <li>love</li>
+            <li>picture</li>
+        </ul>
+    </div>
+    <div  class="box-item ">
+        <p class="title">Settings</p>
+        <ul class="box-item-content">
+            <li>language</li>
+            <li>love</li>
+            <li>picture</li>
+        </ul>
+    </div>
+    <div class="box-item">
+        <p class="title">Logout</p>
+        <ul class="box-item-content">
+            <li>language</li>
+            <li>love</li>
+            <li>picture</li>
+        </ul>
+    </div>
+</div>
+  
+  
+
+</body>
+
+</html>

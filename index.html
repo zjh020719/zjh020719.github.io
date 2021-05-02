@@ -1,51 +1,76 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>纯HTML和CSS实现垂直手风琴菜单列表</title>
-      <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:#282c34 ;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box{
+            background-color: skyblue;
+            width: 400px;
+            height: 400px;
+            margin: auto;
+            margin-top: 17.5%;
+        }
+        p{
+            text-align: center;
+            font-size: 32px;
+            color: #fff;
+        }
+        .input{
+            position: relative;
+            left: 100px;
+            width: 200px;
+            height: 30px;
+            margin-top: 50px;
+            border-radius: 15px;
+            border-color: blue;
+            outline: none;
+        }
+        .input:hover{
+            left: 80px;
+            width: 250px;
+            border-color: greenyellow;
+            outline: none;
+        }
+        .btn{
+            position: relative;
+            left: 150px;
+            width: 200px;
+            height: 30px;
+            margin-top: 50px;
+            border-radius: 15px;
+            width: 100px;
+            background-color: #7bed9f;
+        }
+        span{
+            position: relative;
+            left: 80px;
+        }
+        a{
+           text-decoration: none;
+           color:#fff;
+        }
+    </style>
 </head>
-
 <body>
-
-  <div class="box">
-    <div class="box-item">
-        <p class="title">Account</p>
-        <ul class="box-item-content">
-            <li>language</li>
-            <li>love</li>
-            <li>picture</li>
-        </ul>
+    <div class="box">
+        <p>LOGIN</p>
+        <span>用户名</span><input type="text" class="input">
+        <br>     
+        <span>密码　</span><input type="password" class="input">
+        <br>
+        <button class="btn"><a href="../zjh020719.github.io/sfq.html">sign</a></button>
     </div>
-    <div class="box-item">
-        <p class="title">Messages</p>
-        <ul class="box-item-content">
-            <li>language</li>
-            <li>love</li>
-            <li>picture</li>
-        </ul>
-    </div>
-    <div  class="box-item ">
-        <p class="title">Settings</p>
-        <ul class="box-item-content">
-            <li>language</li>
-            <li>love</li>
-            <li>picture</li>
-        </ul>
-    </div>
-    <div class="box-item">
-        <p class="title">Logout</p>
-        <ul class="box-item-content">
-            <li>language</li>
-            <li>love</li>
-            <li>picture</li>
-        </ul>
-    </div>
-</div>
   
-  
-
 </body>
-
 </html>
