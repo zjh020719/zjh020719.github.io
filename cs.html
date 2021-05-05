@@ -35,38 +35,7 @@
     </style>
 </head>
 <body>
-        <input type="button" value="换肤">
-        <ul>
-            <li><img src="img/1.jpg" alt=""></li>
-            <li><img src="img/2.jpg" alt=""></li>
-            <li><img src="img/3.jpg" alt=""></li>
-            <li><img src="img/4.jpg" alt=""></li>
-        </ul>
-    <script>
-        var btn = document.querySelector('input');
-        var ul =document.querySelector('ul')
-        var flag = 1;
-       btn.addEventListener('click',function(e){
-               
-                if (flag==1) {
-                     ul.style.display='block'
-                      flag = 0;
-                } else if(flag==0){
-                    ul.style.display='none'
-                     flag = 1;
-                }
-               
-            });
-        var body=document.body;       
-        var imgs = document.querySelectorAll('img');
-        for (let i = 0; i < imgs.length; i++) {
-            imgs[i].addEventListener('click',function(e){
-                body.style.backgroundImage='url(' + this.src + ')';
-            });
-              
-            
-        }
-    </script>
+       
 </body>
 
 </html>
